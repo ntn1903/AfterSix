@@ -3,6 +3,7 @@ import Artwork from "@/components/Artwork";
 import Reveal from "@/components/Reveal";
 import ProductRow from "@/components/sections/ProductRow";
 import ProductOptions from "@/components/pdp/ProductOptions";
+import BackButton from "@/components/pdp/BackButton";
 import { getProductBySlug, getRelatedProducts } from "@/lib/products-store";
 import { formatPrice } from "@/lib/format";
 
@@ -21,6 +22,9 @@ export default async function ProductPage({
 
   return (
     <div>
+      <div className="mx-auto max-w-[1320px] px-5 pt-8 md:px-10 md:pt-10">
+        <BackButton />
+      </div>
       <div className="mx-auto grid max-w-[1320px] grid-cols-1 gap-10 px-5 py-12 md:grid-cols-2 md:px-10 md:py-16">
         <Reveal>
           <div className="grid grid-cols-2 gap-3">

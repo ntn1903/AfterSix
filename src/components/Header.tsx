@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { useCart } from "@/lib/cart-context";
@@ -47,11 +48,17 @@ export default function Header() {
       <div className="mx-auto flex max-w-[1320px] items-center justify-between px-5 py-4 md:px-10">
         <Link
           href="/"
-          className={`text-lg font-semibold tracking-[0.18em] transition-colors ${
-            solid ? "text-[var(--primary)]" : "text-white"
-          }`}
+          className="relative block h-8 w-28 shrink-0"
+          aria-label="AfterSix - Trang chủ"
         >
-          AFTERSIX
+          <Image
+            src="/aftersix_logo.png"
+            alt="AfterSix"
+            fill
+            sizes="112px"
+            className="object-contain object-left"
+            priority
+          />
         </Link>
 
         <nav
@@ -73,10 +80,21 @@ export default function Header() {
         <div className="flex items-center gap-4">
           <Link
             href="/cart"
-            className={`relative text-sm tracking-wide transition-opacity hover:opacity-60 ${
+            className={`relative flex items-center gap-2 text-sm tracking-wide transition-opacity hover:opacity-60 ${
               solid ? "text-[var(--primary)]" : "text-white"
             }`}
           >
+            <svg
+              aria-hidden="true"
+              className="h-[17px] w-[17px]"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth="1.8"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M2.75 4.5h2.1l1.55 9.2a2 2 0 0 0 1.97 1.67h8.68a2 2 0 0 0 1.92-1.44L20.7 8H6.1" />
+              <path strokeLinecap="round" strokeLinejoin="round" d="M9 19.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm8.5 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+            </svg>
             Giỏ hàng
             {totalItems > 0 && (
               <span className="absolute -right-3 -top-2 flex h-4 w-4 items-center justify-center rounded-full bg-[var(--accent)] text-[10px] font-medium text-[var(--primary)]">

@@ -36,7 +36,14 @@ export default function SocialProof() {
         </div>
 
         <Reveal className="mt-16 text-center" delay={0.1}>
-          <p className="text-xs uppercase tracking-[0.3em] text-[var(--secondary)]">@aftersix.vn</p>
+          <a
+            href="https://www.instagram.com/aftersix.store/"
+            target="_blank"
+            rel="noreferrer"
+            className="text-xs uppercase tracking-[0.3em] text-[var(--secondary)] transition-colors hover:text-[var(--primary)]"
+          >
+            @aftersix.store
+          </a>
           <h3 className="mt-2 text-2xl tracking-wide">Theo dõi trên Instagram</h3>
         </Reveal>
         <div className="mt-8 grid grid-cols-3 gap-3 md:grid-cols-6 md:gap-4">

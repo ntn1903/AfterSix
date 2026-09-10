@@ -25,7 +25,7 @@
       "Giặt tay hoặc chế độ nhẹ"
     ],
     "isBestSeller": false,
-    "image": "/products/ao-so-mi-lua-be-1789020549298.jpg"
+    "image": "/products/ao-so-mi-lua-be-1789024532976.png"
   },
   {
     "id": "p2",
@@ -53,7 +53,7 @@
       "Có lót trong"
     ],
     "isNew": false,
-    "image": "/products/vay-midi-xep-ly-1789020562011.jpg"
+    "image": "/products/vay-midi-xep-ly-1789024541132.png"
   },
   {
     "id": "p4",
@@ -76,8 +76,11 @@
     "details": [
       "Chất liệu linen tự nhiên",
       "Đi kèm áo + váy",
-      "Thoáng khí, thấm hút tốt"
-    ]
+      "Thoáng khí",
+      "thấm hút tốt"
+    ],
+    "isBestSeller": false,
+    "image": "/products/set-ao-vay-linen-1789024549217.png"
   },
   {
     "id": "p5",
@@ -102,7 +105,9 @@
       "Len pha cotton",
       "Co giãn nhẹ",
       "Giữ form sau nhiều lần giặt"
-    ]
+    ],
+    "isNew": false,
+    "image": "/products/ao-len-co-tron-den-1789024558713.png"
   },
   {
     "id": "p6",
@@ -126,7 +131,10 @@
       "Chun eo co giãn thoải mái",
       "Vải mềm rũ",
       "Họa tiết in kỹ thuật số"
-    ]
+    ],
+    "isNew": false,
+    "isBestSeller": false,
+    "image": "/products/vay-chun-eo-hoa-tiet-1789024567093.png"
   },
   {
     "id": "p7",
@@ -178,6 +186,6 @@
       "Quần ống suông"
     ],
     "isNew": true,
-    "image": "/products/set-blazer-quan-tay-1789020628280.jpg"
+    "image": "/products/set-blazer-quan-tay-1789024576983.png"
   }
 ]
