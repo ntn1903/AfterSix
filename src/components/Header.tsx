@@ -63,7 +63,7 @@ export default function Header() {
 
         <nav
           className={`hidden items-center gap-8 text-sm tracking-wide md:flex ${
-            solid ? "text-[var(--primary)]" : "text-white"
+            solid ? "text-[var(--primary)]" : "text-dark"
           }`}
         >
           {navLinks.map((link) => (
@@ -81,7 +81,7 @@ export default function Header() {
           <Link
             href="/cart"
             className={`relative flex items-center gap-2 text-sm tracking-wide transition-opacity hover:opacity-60 ${
-              solid ? "text-[var(--primary)]" : "text-white"
+              solid ? "text-[var(--primary)]" : "text-dark"
             }`}
           >
             <svg
@@ -104,7 +104,7 @@ export default function Header() {
           </Link>
           <button
             aria-label="Mở menu"
-            className={`md:hidden ${solid ? "text-[var(--primary)]" : "text-white"}`}
+            className={`md:hidden ${solid ? "text-[var(--primary)]" : "text-dark"}`}
             onClick={() => setMenuOpen((v) => !v)}
           >
             {menuOpen ? "✕" : "☰"}
