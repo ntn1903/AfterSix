@@ -35,7 +35,7 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
-## Production storage
+## Product data
 
-The admin product editor uses the local filesystem during development. On Vercel, add a Vercel Blob store to the project and set its `BLOB_READ_WRITE_TOKEN` environment variable for Production. Product data and uploaded images will then be stored in Blob instead of the read-only deployment filesystem.
+Product data is kept in `data/products.json`, and uploaded product images are kept in `public/products`. This is intentionally a simple file-based setup for a landing-page-style project. Changes made through the admin page require a writable Node server or local development; Vercel's deployment filesystem is read-only and does not persist edits.
 # AfterSix

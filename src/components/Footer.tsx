@@ -38,6 +38,7 @@ export default function Footer() {
       </div>
       <div className="border-t border-[var(--border)] px-5 py-6 text-center text-xs text-[var(--secondary)] md:px-10">
         © {new Date().getFullYear()} AfterSix. All rights reserved.
+        <p className="mt-1">Phiên bản 0.1.0</p>
       </div>
     </footer>
   );
