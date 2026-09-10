@@ -1,0 +1,183 @@
+[
+  {
+    "id": "p1",
+    "slug": "ao-so-mi-lua-be",
+    "name": "Áo Sơ Mi Lụa Be",
+    "price": 590000,
+    "category": "ao",
+    "collection": "soft-confidence",
+    "colors": [
+      "Be",
+      "Trắng ngà"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "isNew": true,
+    "tone": "from-[#EDE6DC] to-[#C8B9A6]",
+    "description": "Áo sơ mi lụa cao cấp với form suông nhẹ, tôn dáng thanh lịch, phù hợp cả đi làm và dạo phố.",
+    "details": [
+      "Chất liệu lụa pha",
+      "Form suông",
+      "cổ classic",
+      "Giặt tay hoặc chế độ nhẹ"
+    ],
+    "isBestSeller": false,
+    "image": "/products/ao-so-mi-lua-be-1789020549298.jpg"
+  },
+  {
+    "id": "p2",
+    "slug": "vay-midi-xep-ly",
+    "name": "Váy Midi Xếp Ly",
+    "price": 750000,
+    "compareAtPrice": 890000,
+    "category": "vay",
+    "collection": "soft-confidence",
+    "colors": [
+      "Kem",
+      "Đen"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "isBestSeller": true,
+    "tone": "from-[#F2EFE9] to-[#CBBFA9]",
+    "description": "Váy midi xếp ly mềm mại, chuyển động nhẹ nhàng theo từng bước đi.",
+    "details": [
+      "Vải tuyết mưa cao cấp",
+      "Dáng xòe nhẹ",
+      "Có lót trong"
+    ],
+    "isNew": false,
+    "image": "/products/vay-midi-xep-ly-1789020562011.jpg"
+  },
+  {
+    "id": "p4",
+    "slug": "set-ao-vay-linen",
+    "name": "Set Áo Váy Linen",
+    "price": 980000,
+    "category": "set",
+    "collection": "linen-story",
+    "colors": [
+      "Trắng ngà",
+      "Nâu đất"
+    ],
+    "sizes": [
+      "S",
+      "M"
+    ],
+    "isNew": true,
+    "tone": "from-[#F2EFE9] to-[#CBBFA9]",
+    "description": "Set đồ linen hai món, chất vải thoáng mát, phù hợp tiết trời oi nóng.",
+    "details": [
+      "Chất liệu linen tự nhiên",
+      "Đi kèm áo + váy",
+      "Thoáng khí, thấm hút tốt"
+    ]
+  },
+  {
+    "id": "p5",
+    "slug": "ao-len-co-tron-den",
+    "name": "Áo Len Cổ Tròn Đen",
+    "price": 480000,
+    "category": "ao",
+    "collection": "midnight-ease",
+    "colors": [
+      "Đen",
+      "Xám than"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "isBestSeller": true,
+    "tone": "from-[#3a3a3a] to-[#111111]",
+    "description": "Áo len basic cổ tròn, giữ ấm tốt, dễ layer cùng blazer hoặc áo khoác dạ.",
+    "details": [
+      "Len pha cotton",
+      "Co giãn nhẹ",
+      "Giữ form sau nhiều lần giặt"
+    ]
+  },
+  {
+    "id": "p6",
+    "slug": "vay-chun-eo-hoa-tiet",
+    "name": "Váy Chun Eo Họa Tiết",
+    "price": 690000,
+    "category": "vay",
+    "collection": "linen-story",
+    "colors": [
+      "Be hoa",
+      "Xanh hoa"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "tone": "from-[#EDE6DC] to-[#C8B9A6]",
+    "description": "Váy chun eo họa tiết nhẹ nhàng, phù hợp dạo phố hoặc du lịch.",
+    "details": [
+      "Chun eo co giãn thoải mái",
+      "Vải mềm rũ",
+      "Họa tiết in kỹ thuật số"
+    ]
+  },
+  {
+    "id": "p7",
+    "slug": "quan-culottes-kem",
+    "name": "Quần Culottes Kem",
+    "price": 560000,
+    "category": "quan",
+    "collection": "soft-confidence",
+    "colors": [
+      "Kem",
+      "Nâu nhạt"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "tone": "from-[#F2EFE9] to-[#CBBFA9]",
+    "description": "Quần culottes ống rộng, tạo cảm giác thoải mái mà vẫn thanh lịch.",
+    "details": [
+      "Ống rộng, đứng dáng",
+      "Lưng thun sau",
+      "Phù hợp dáng người mọi kiểu"
+    ]
+  },
+  {
+    "id": "p8",
+    "slug": "set-blazer-quan-tay",
+    "name": "Set Blazer & Quần Tây",
+    "price": 1290000,
+    "compareAtPrice": 1490000,
+    "category": "set",
+    "collection": "quiet-luxury",
+    "colors": [
+      "Xám",
+      "Be"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "isBestSeller": true,
+    "tone": "from-[#E7E5E1] to-[#A9A29A]",
+    "description": "Set vest công sở thanh lịch, cắt may tinh tế, phù hợp môi trường chuyên nghiệp.",
+    "details": [
+      "Vải suit cao cấp",
+      "Blazer form vừa",
+      "Quần ống suông"
+    ],
+    "isNew": true,
+    "image": "/products/set-blazer-quan-tay-1789020628280.jpg"
+  }
+]
