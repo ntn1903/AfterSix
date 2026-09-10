@@ -21,6 +21,14 @@ function usesBlobStorage(): boolean {
   return Boolean(process.env.BLOB_READ_WRITE_TOKEN);
 }
 
+function ensureProductionStorage(): void {
+  if (process.env.NODE_ENV === "production" && !usesBlobStorage()) {
+    throw new Error(
+      "Thiếu BLOB_READ_WRITE_TOKEN trên production. Hãy kết nối Vercel Blob Store với project và redeploy."
+    );
+  }
+}
+
 export async function getAllProducts(): Promise<Product[]> {
   if (usesBlobStorage()) {
     const { blobs } = await list({ prefix: DATA_BLOB_PATH, limit: 1 });
@@ -36,6 +44,8 @@ export async function getAllProducts(): Promise<Product[]> {
 }
 
 async function saveAllProducts(products: Product[]): Promise<void> {
+  ensureProductionStorage();
+
   if (usesBlobStorage()) {
     await put(DATA_BLOB_PATH, JSON.stringify(products, null, 2), {
       access: "public",
@@ -67,6 +77,8 @@ export async function getRelatedProducts(product: Product, limit = 4): Promise<P
 
 /** Validates and writes an uploaded image into public/products, returning its public URL path. */
 export async function saveProductImage(file: File, baseName: string): Promise<string> {
+  ensureProductionStorage();
+
   const ext = ALLOWED_IMAGE_TYPES[file.type];
   if (!ext) {
     throw new Error("Định dạng ảnh không được hỗ trợ (chỉ nhận JPG, PNG, WEBP, GIF).");
