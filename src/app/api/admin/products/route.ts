@@ -4,6 +4,7 @@ import {
   getAllProducts,
   saveProductImage,
   updateProduct,
+  assertWritableStorage,
   type ProductInput,
 } from "@/lib/products-store";
 import type { ProductCategory } from "@/lib/types";
@@ -24,6 +25,7 @@ export async function GET() {
 
 export async function POST(request: Request) {
   try {
+    assertWritableStorage();
     const form = await request.formData();
 
     const name = String(form.get("name") ?? "").trim();

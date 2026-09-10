@@ -15,6 +15,14 @@ const ALLOWED_IMAGE_TYPES: Record<string, string> = {
 };
 const MAX_IMAGE_BYTES = 5 * 1024 * 1024;
 
+export function assertWritableStorage(): void {
+  if (process.env.NODE_ENV === "production") {
+    throw new Error(
+      "Chức năng quản trị sản phẩm cần chạy trên server có filesystem ghi được. Production hiện chỉ hỗ trợ xem dữ liệu tĩnh."
+    );
+  }
+}
+
 export async function getAllProducts(): Promise<Product[]> {
   const raw = await fs.readFile(DATA_FILE, "utf-8");
   return JSON.parse(raw) as Product[];

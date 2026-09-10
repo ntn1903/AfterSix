@@ -1,7 +1,15 @@
+import fs from "node:fs/promises";
+import path from "node:path";
 import Link from "next/link";
 // import Newsletter from "./Newsletter";
 
-export default function Footer() {
+async function getAppVersion(): Promise<string> {
+  const readme = await fs.readFile(path.join(process.cwd(), "README.md"), "utf-8");
+  return readme.match(/^# App version:\s*(.+)$/m)?.[1]?.trim() || "unknown";
+}
+
+export default async function Footer() {
+  const appVersion = await getAppVersion();
   return (
     <footer className="border-t border-[var(--border)] bg-[var(--surface)]">
       {/* <Newsletter /> */}
@@ -38,7 +46,7 @@ export default function Footer() {
       </div>
       <div className="border-t border-[var(--border)] px-5 py-6 text-center text-xs text-[var(--secondary)] md:px-10">
         © {new Date().getFullYear()} AfterSix. All rights reserved.
-        <p className="mt-1">Phiên bản 0.1.0</p>
+        <p className="mt-1">Phiên bản {appVersion}</p>
       </div>
     </footer>
   );

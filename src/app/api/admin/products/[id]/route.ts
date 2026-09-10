@@ -5,6 +5,7 @@ import {
   getProductById,
   saveProductImage,
   updateProduct,
+  assertWritableStorage,
 } from "@/lib/products-store";
 import type { ProductCategory } from "@/lib/types";
 
@@ -24,6 +25,7 @@ export async function PUT(
   const { id } = await params;
 
   try {
+    assertWritableStorage();
     const existing = await getProductById(id);
     if (!existing) return NextResponse.json({ error: "Không tìm thấy sản phẩm." }, { status: 404 });
 
@@ -76,6 +78,7 @@ export async function DELETE(
 ) {
   const { id } = await params;
   try {
+    assertWritableStorage();
     await deleteProduct(id);
     return NextResponse.json({ ok: true });
   } catch (error) {
